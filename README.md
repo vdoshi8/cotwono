@@ -1,6 +1,6 @@
 # Welcome to our project
 
-## What technologies are used for this project?
+## Technologies are used for this project?
 
 This project is built with .
 
