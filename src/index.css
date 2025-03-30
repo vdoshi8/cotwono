@@ -1,0 +1,112 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 35% 98%;
+    --foreground: 220 45% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 45% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 45% 15%;
+
+    --primary: 142 72% 29%;
+    --primary-foreground: 140 20% 98%;
+
+    --secondary: 199 64% 73%;
+    --secondary-foreground: 200 80% 15%;
+
+    --muted: 210 25% 96%;
+    --muted-foreground: 220 20% 40%;
+
+    --accent: 199 64% 73%;
+    --accent-foreground: 200 80% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 142 72% 29%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 140 35% 98%;
+    --sidebar-foreground: 220 45% 15%;
+    --sidebar-primary: 142 72% 29%;
+    --sidebar-primary-foreground: 140 20% 98%;
+    --sidebar-accent: 140 10% 95%;
+    --sidebar-accent-foreground: 220 45% 15%;
+    --sidebar-border: 140 10% 90%;
+    --sidebar-ring: 142 72% 29%;
+  }
+
+  .dark {
+    --background: 220 45% 10%;
+    --foreground: 140 20% 90%;
+
+    --card: 220 45% 13%;
+    --card-foreground: 140 20% 90%;
+
+    --popover: 220 45% 13%;
+    --popover-foreground: 140 20% 90%;
+
+    --primary: 142 70% 40%;
+    --primary-foreground: 140 20% 98%;
+
+    --secondary: 199 70% 40%;
+    --secondary-foreground: 140 20% 98%;
+
+    --muted: 220 35% 18%;
+    --muted-foreground: 140 15% 70%;
+
+    --accent: 199 70% 40%;
+    --accent-foreground: 140 20% 98%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 140 20% 98%;
+
+    --border: 220 40% 20%;
+    --input: 220 40% 20%;
+    --ring: 142 70% 40%;
+
+    --sidebar-background: 220 45% 10%;
+    --sidebar-foreground: 140 20% 90%;
+    --sidebar-primary: 142 70% 40%;
+    --sidebar-primary-foreground: 140 20% 98%;
+    --sidebar-accent: 220 35% 18%;
+    --sidebar-accent-foreground: 140 20% 90%;
+    --sidebar-border: 220 40% 20%;
+    --sidebar-ring: 142 70% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .badge-green {
+    @apply bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-blue {
+    @apply bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-amber {
+    @apply bg-amber-100 text-amber-800 px-2 py-1 rounded-full text-xs font-medium;
+  }
+}
